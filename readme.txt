@@ -1,6 +1,6 @@
 文件说明：
 	func.html		-执行开机、关机、重启后的反馈页面
-	home.html	-主页面
+	home.html		-主页面
 	Remote_switch.ino	-Arduino工程文件
 开发环境：
 	
