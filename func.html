@@ -1,0 +1,32 @@
+<!------------------------------------------------------------------------------------------------------------------------
+ * 文件名称：func.html
+
+ * 文件内容：
+
+ * 文件版本：1.0.0
+
+ * 文件作者：阿顿
+
+ * 开发环境：Visual Studio 1.65.0 & Microsoft Edge  98.0.1108.62 
+
+ * 注    意：为了兼容Arduino的数组，部分加了二个双引号，要想浏览器中打开，需要一对双引号
+------------------------------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=""utf-8"" />
+		<title>
+
+        </title>
+		<script>
+            function run() {
+                var url = window.location.host;
+                window.location.replace('?operation=Home');
+            }
+       </script>
+	</head>
+	<body>
+        <h1>已完成开机命令</h1>
+        <button onclick=""run()"" style=""width:150px;height:40px"">返回首页</button>
+	</body>
+</html>

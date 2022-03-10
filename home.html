@@ -1,0 +1,49 @@
+<!------------------------------------------------------------------------------------------------------------------------
+ * 文件名称：home.html
+
+ * 文件内容：
+
+ * 文件版本：1.0.0
+
+ * 文件作者：阿顿
+
+ * 开发环境：Visual Studio 1.65.0 & Microsoft Edge  98.0.1108.62 
+
+ * 注    意：为了兼容Arduino的数组，部分加了二个双引号，要想浏览器中打开，需要一对双引号
+------------------------------------------------------------------------------------------------------------------------->
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset=""utf-8"" />
+		<title>
+
+        </title>
+		<script>
+            function off() {
+                var url = window.location.host;
+                window.location.replace('?operation=OFF');
+            }
+            function on() {
+                var url = window.location.host;
+                window.location.replace('?operation=ON');
+            }
+            function reboot() {
+                var url = window.location.host;
+                window.location.replace('?operation=ReBoot');
+            }
+       </script>
+	</head>
+	<body>
+        <h1>网络远程开关机</h1>
+        <p>作者：阿顿</p>
+        <h4>--------控制台---------</h4>
+        <button onclick=""on()"" style=""width:150px;height:40px"">开机</button>
+        <p>&nbsp</p>
+        <button onclick=""off()"" style=""width:150px;height:40px"">关机</button>
+        <p>&nbsp</p>
+        <button onclick=""reboot()"" style=""width:150px;height:40px"">重启</button>
+        <h4>-------设备信息--------</h4>
+        <p>设备型号: ESP 8266</p>
+        <p>软件版本：1.0.1</p>
+	</body>
+</html>
